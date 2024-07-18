@@ -2,7 +2,7 @@ import React from 'react'
 import ToggleFunc from './component/ToggleFunc'
 import { BrowserRouter,Route,Routes } from 'react-router-dom'
 import './App.css'
-import About from './About'
+import About from './component/About'
 
 const Home = () => (
   <>
