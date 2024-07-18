@@ -1,4 +1,4 @@
-import React from 'react'
+
 import FunCompOne from './FunCompOne'
 import FunCompTwo from './FunCompTwo'
 import { useState } from 'react'
