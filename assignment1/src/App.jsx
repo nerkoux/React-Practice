@@ -1,27 +1,30 @@
 import React from 'react'
-import ToggleFunc from './component/ToggleFunc'
-import { BrowserRouter,Route,Routes } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
+import Navbar from './component/Navbar'
+import ToggleFunc from './component/ToggleFunc'
 import About from './component/About'
 
-const Home = () => (
+const Funnt = () => (
   <>
-    <h1>Home</h1>
+    <h1>FUNCTIONAL COMPONENTS</h1>
     <ToggleFunc />
   </>
 )
 
-
 const App = () => {
   return (
-    <>
     <BrowserRouter>
-    <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/about" element={<About />} />
-    </Routes>  {/* Above, we use Routes component to wrap all our routes */}
+      <div className="app-container">
+        <Navbar />
+        <div className="content">
+          <Routes>
+            <Route path="/" element={<Funnt />} />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </div>
+      </div>
     </BrowserRouter>
-    </>
   )
 }
 

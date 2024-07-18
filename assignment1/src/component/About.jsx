@@ -5,7 +5,7 @@ import '../App.css'
 const About = () => {
   return (
     <>
-    <h1>Hello World</h1>
+    <h1>Routing Works</h1>
     </>
   )
 }
