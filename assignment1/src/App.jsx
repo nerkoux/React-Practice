@@ -3,7 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import './App.css'
 import Navbar from './component/Navbar'
 import ToggleFunc from './component/ToggleFunc'
-import About from './component/About'
+import RoutingCheck from './component/RoutingCheck'
 
 const Funnt = () => (
   <>
@@ -20,7 +20,7 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route path="/" element={<Funnt />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/routingcheck" element={<RoutingCheck />} />
           </Routes>
         </div>
       </div>
