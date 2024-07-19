@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import '../App.css'
 
 const DataFetch = () => {
     const [name, setName] = useState("");
@@ -15,21 +16,47 @@ const DataFetch = () => {
     }
 
     const handleSubmit = () => {
-        const obj = {
-            name:name,
-            age:age
+        if (name && age) {
+            const obj = {
+                name: name,
+                age: age
+            }
+            setData([...data, obj]);
+            setName("");
+            setAge("");
         }
-        setData([...data,obj])
     }
 
     return (
-        <div>
-            <input type="text" name="name" value={name} onChange={handleChange} />
-            <input type="text" name="age" value={age} onChange={handleChange} />
-            <button onClick={handleSubmit}>Submit</button>
-            {data.map((item,index)=>(
-                <h1 key={index}>{item.name}{item.age}</h1> 
-            ))}
+        <div className="data-fetch-container">
+            <div className="input-container">
+                <input 
+                    type="text" 
+                    name="name" 
+                    value={name} 
+                    onChange={handleChange} 
+                    placeholder="Enter name"
+                />
+                <input 
+                    type="number" 
+                    name="age" 
+                    value={age} 
+                    onChange={handleChange} 
+                    placeholder="Enter age"
+                />
+                <button onClick={handleSubmit}>Submit</button>
+            </div>
+            <div className="user-list-container">
+                <h2>User List</h2>
+                <div className="user-list">
+                    {data.map((item, index) => (
+                        <div key={index} className="user-item">
+                            <p><strong>Name:</strong> {item.name}</p>
+                            <p><strong>Age:</strong> {item.age}</p>
+                        </div>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }
