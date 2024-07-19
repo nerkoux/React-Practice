@@ -28,7 +28,10 @@ const Navbar = () => {
             <Link to="/routingcheck" className="nav-link" onClick={toggleMenu}>Routing Check</Link>
           </li>
           <li className="nav-item">
-            <Link to="/userlist" className="nav-link" onClick={toggleMenu}>User Data Fetch</Link>
+            <Link to="/userlist" className="nav-link" onClick={toggleMenu}>User Data</Link>
+          </li>
+          <li className="nav-item">
+            <Link to="/datafetch" className="nav-link" onClick={toggleMenu}>Data Fetching</Link>
           </li>
         </ul>
       </div>

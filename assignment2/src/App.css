@@ -1,11 +1,11 @@
-.app-container {
+.user-container {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   font-family: Arial, sans-serif;
 }
 
-.app-title {
+.user-title {
   color: #333;
   text-align: center;
 }
@@ -45,7 +45,7 @@
   background-color: #0056b3;
 }
 
-.app-footer {
+.user-footer {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;

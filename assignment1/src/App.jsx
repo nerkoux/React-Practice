@@ -4,6 +4,7 @@ import Navbar from './component/Navbar'
 import ToggleFunc from './component/ToggleFunc'
 import RoutingCheck from './component/RoutingCheck'
 import UserList from './component/UserList'
+import DataFetch from './component/DataFetch'
 
 const Funnt = () => (
   <>
@@ -23,7 +24,7 @@ const App = () => {
             <Route path="/routingcheck" element={<RoutingCheck />} />
             <Route path="/userlist" element={<UserList />} />
             <Route path="/togglefunc" element={<ToggleFunc />} />
-
+            <Route path="/datafetch" element={<DataFetch />} />
           </Routes>
         </div>
       </div>
