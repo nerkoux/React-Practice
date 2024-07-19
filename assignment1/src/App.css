@@ -97,8 +97,7 @@
 
 .navbar {
   background-color: #333;
-  color: white;
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 .navbar-container {
@@ -107,33 +106,91 @@
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .navbar-brand {
-  color: white;
-  text-decoration: none;
+  color: #fff;
   font-size: 1.5rem;
+  text-decoration: none;
   font-weight: bold;
 }
 
 .nav-menu {
   display: flex;
-  list-style: none;
+  list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 1rem; /* This adds space between nav items */
 }
 
 .nav-item {
-  margin-left: 1rem;
+  /* Removed margin-left from here */
 }
 
 .nav-link {
-  color: white;
+  color: #fff;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #61dafb;
+  background-color: #fff;
+  color: #333;
+}
+
+.user-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.user-title {
+  color: #333;
+  text-align: center;
+}
+
+.user-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.user-item {
+  background-color: black;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.user-item:hover {
+  background-color: #e0e0e0;
+}
+
+.load-more-btn {
+  display: block;
+  width: 200px;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #007bff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.load-more-btn:hover {
+  background-color: #0056b3;
+}
+
+.user-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  color: #666;
 }

@@ -3,6 +3,7 @@ import './App.css'
 import Navbar from './component/Navbar'
 import ToggleFunc from './component/ToggleFunc'
 import RoutingCheck from './component/RoutingCheck'
+import UserList from './component/UserList'
 
 const Funnt = () => (
   <>
@@ -20,6 +21,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Funnt />} />
             <Route path="/routingcheck" element={<RoutingCheck />} />
+            <Route path="/userlist" element={<UserList />} />
+
           </Routes>
         </div>
       </div>

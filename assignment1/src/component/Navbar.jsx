@@ -13,6 +13,8 @@ const Navbar = () => {
           </li>
           <li className="nav-item">
             <Link to="/routingcheck" className="nav-link">Routing Check</Link>
+            <Link to="/userlist" className="nav-link">User List</Link>
+
           </li>
         </ul>
       </div>
