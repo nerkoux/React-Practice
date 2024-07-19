@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../App.css';
 
@@ -33,6 +33,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/datafetch" className="nav-link" onClick={toggleMenu}>Data Fetching</Link>
           </li>
+          {/* <li className="nav-item">
+            <Link to="/themecontext" className="nav-link" onClick={toggleMenu}>Theme Context</Link>
+          </li> */}
         </ul>
       </div>
     </nav>
