@@ -9,6 +9,8 @@ const ToggleFunc = () => {
     const [funcTwo,setfunTwo] = useState(false);
 
   return (
+    <>
+    <h1>Functional Components</h1>
     <div className="toggle-container">
             <div className="button-container">
         <button onClick={()=>setfunOne(!funcOne)}>First Functional Component</button>
@@ -19,6 +21,7 @@ const ToggleFunc = () => {
         {funcTwo? <FunCompTwo/> : null}
     </div>
     </div>
+    </>
   )
 }
 

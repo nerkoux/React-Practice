@@ -7,8 +7,8 @@ import UserList from './component/UserList'
 
 const Funnt = () => (
   <>
-    <h1>FUNCTIONAL COMPONENTS</h1>
-    <ToggleFunc />
+    <h1>Welcome to the React Practice Webpage</h1>
+    <marquee>Click on the navbar links to see all the functions</marquee>
   </>
 )
 
@@ -22,6 +22,7 @@ const App = () => {
             <Route path="/" element={<Funnt />} />
             <Route path="/routingcheck" element={<RoutingCheck />} />
             <Route path="/userlist" element={<UserList />} />
+            <Route path="/togglefunc" element={<ToggleFunc />} />
 
           </Routes>
         </div>

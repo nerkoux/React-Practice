@@ -22,7 +22,7 @@ const Navbar = () => {
         </div>
         <ul className={`nav-menu ${isMenuActive ? 'active' : ''}`}>
           <li className="nav-item">
-            <Link to="/" className="nav-link" onClick={toggleMenu}>Functional Components</Link>
+            <Link to="/togglefunc" className="nav-link" onClick={toggleMenu}>Functional Components</Link>
           </li>
           <li className="nav-item">
             <Link to="/routingcheck" className="nav-link" onClick={toggleMenu}>Routing Check</Link>
