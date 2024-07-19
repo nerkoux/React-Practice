@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const AssignmentTwo = () => {
     const [name, setName] = useState("");
