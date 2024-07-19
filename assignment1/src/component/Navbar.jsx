@@ -32,7 +32,7 @@ const Navbar = () => {
             <Link to="/userlist" className="nav-link" onClick={toggleMenu}>User Data</Link>
           </li>
           <li className="nav-item">
-            <Link to="/datafetch" className="nav-link" onClick={toggleMenu}>Data Fetching</Link>
+            <Link to="/datafetch" className="nav-link" onClick={toggleMenu}>Employee Feedback Form</Link>
           </li>
           {/* <li className="nav-item">
             <Link to="/themecontext" className="nav-link" onClick={toggleMenu}>Theme Context</Link>
