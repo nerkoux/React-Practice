@@ -121,11 +121,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  gap: 1rem; /* This adds space between nav items */
-}
-
-.nav-item {
-  /* Removed margin-left from here */
+  gap: 1rem;
 }
 
 .nav-link {
@@ -139,6 +135,64 @@
 .nav-link:hover {
   background-color: #fff;
   color: #333;
+}
+
+/* Hamburger menu icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background-color: #fff;
+  margin: 2px 0;
+  transition: 0.4s;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .navbar-container {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-link {
+    padding: 0.75rem 1rem;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 .user-container {
