@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 const DataFetch = () => {
     const [name, setName] = useState("");
