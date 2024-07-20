@@ -88,11 +88,16 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
 }
 
 .content {
   flex: 1;
   padding: 20px;
+  margin-top: 20px;
 }
 
 .navbar {
@@ -185,6 +190,10 @@
   }
 }
 
+.home-container {
+  text-align: center;
+}
+
 @media (max-width: 480px) {
   .navbar-brand {
     font-size: 1.2rem;
@@ -248,4 +257,53 @@
   justify-content: space-between;
   margin-top: 20px;
   color: #666;
+}
+
+.feature-section, .interactive-section, .cta-section {
+  margin: 40px 0;
+}
+
+button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul, ol {
+  text-align: left;
+  margin-left: 20px;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+section {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: black;
+  border-radius: 8px;
+}
+
+.concept {
+  margin-bottom: 20px;
+}
+
+pre {
+  background-color: black;
+  padding: 10px;
+  border-radius: 4px;
+  overflow-x: auto;
 }
