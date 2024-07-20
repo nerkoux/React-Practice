@@ -40,6 +40,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/contextapi" className="nav-link" onClick={toggleMenu}>Context API</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/emicalculator" className="nav-link" onClick={toggleMenu}>EMI Calc</Link>
+          </li>
         </ul>
       </div>
     </nav>

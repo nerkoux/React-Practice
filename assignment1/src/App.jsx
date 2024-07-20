@@ -8,6 +8,7 @@ import UserList from './component/UserList';
 import DataFetch from './component/DataFetch';
 import Hooks from './component/Hooks';
 import ContextAPI from './component/ContextAPI';
+import EmiCalculator from './component/EMICalculator';
 
 const Home = () => {
   const [count, setCount] = useState(0);
@@ -98,6 +99,7 @@ const App = () => {
             <Route path="/datafetch" element={<DataFetch />} />
             <Route path="/hooks" element={<Hooks />} />
             <Route path="/contextapi" element={<ContextAPI />} />
+            <Route path="/emicalculator" element={<EmiCalculator />} />
           </Routes>
         </main>
         <footer>
