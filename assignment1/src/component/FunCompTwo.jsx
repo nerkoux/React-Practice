@@ -1,4 +1,4 @@
-import '../App.css'
+import '../Toggle.css'
 
 const FunCompTwo = () => {
   return (
