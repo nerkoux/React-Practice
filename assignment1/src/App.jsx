@@ -6,6 +6,7 @@ import RoutingCheck from './component/RoutingCheck'
 import UserList from './component/UserList'
 import DataFetch from './component/DataFetch'
 import Hooks from './component/Hooks'
+import ContextAPI from './component/ContextAPI'
 // import { ThemeContext } from './ContextAPI/ThemeContext'
 
 const Funnt = () => (
@@ -28,7 +29,7 @@ const App = () => {
             <Route path="/togglefunc" element={<ToggleFunc />} />
             <Route path="/datafetch" element={<DataFetch />} />
             <Route path="/hooks" element={<Hooks />} />
-            {/* <Route path="/themecontext" element={<ThemeContext />} /> */}
+            <Route path="/contextapi" element={<ContextAPI />} />
           </Routes>
         </div>
       </div>

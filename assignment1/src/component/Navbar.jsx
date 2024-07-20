@@ -37,6 +37,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/hooks" className="nav-link" onClick={toggleMenu}>Hooks</Link>
           </li>
+          <li className="nav-item">
+            <Link to="/contextapi" className="nav-link" onClick={toggleMenu}>Context API</Link>
+          </li>
         </ul>
       </div>
     </nav>
