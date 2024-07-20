@@ -34,9 +34,9 @@ const Navbar = () => {
           <li className="nav-item">
             <Link to="/datafetch" className="nav-link" onClick={toggleMenu}>Employee Feedback Form</Link>
           </li>
-          {/* <li className="nav-item">
-            <Link to="/themecontext" className="nav-link" onClick={toggleMenu}>Theme Context</Link>
-          </li> */}
+          <li className="nav-item">
+            <Link to="/hooks" className="nav-link" onClick={toggleMenu}>Hooks</Link>
+          </li>
         </ul>
       </div>
     </nav>
