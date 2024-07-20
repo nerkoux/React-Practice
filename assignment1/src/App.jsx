@@ -18,6 +18,7 @@ const Home = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // eslint-disable-next-line react/prop-types
   const CodeSnippet = ({ code }) => (
     <pre><code>{code}</code></pre>
   );
