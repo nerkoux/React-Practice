@@ -1,69 +1,73 @@
-.App {
+.EmiCalculator {
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
   }
   
   .App-logo {
     height: 40vmin;
+    max-height: 200px;
     pointer-events: none;
   }
-  h1{
-    display: flex;
-    justify-content: center;
+  
+  h1 {
     color: brown;
+    margin-bottom: 20px;
   }
-  form{
+  
+  form {
     display: flex;
-    justify-content: center;
-  }
-  input{
-    background-color: black;
-    border-radius: 5px;
-    display: inline-block;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    margin-bottom: 30px;
   }
-  #submit{
-      min-width: 130px;
-      height: 40px;
-      color: #fff;
-      padding: 5px 10px;
-      font-weight: bold;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      position: relative;
-      /* display: inline-block; */
-      outline: none;
-      border: 2px solid #2c0b8e;
-      background: #2c0b8e;
-    position: relative;
-    top:100px;
-    right:440px;
+  
+  input {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    max-width: 300px;
   }
+  
+  #submit {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid #2c0b8e;
+    background: #2c0b8e;
+    border-radius: 5px;
+    margin-top: 20px;
+  }
+  
   #submit:hover {
     background: #fff;
-    color: #2c0b8e
+    color: #2c0b8e;
   }
   
-  #table{
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    top: 130px;
+  #table {
+    margin-top: 30px;
+    overflow-x: auto;
   }
   
-  .history{
-    position: relative;
-    top:150px;
-    left:650px;
+  .history {
+    margin-top: 30px;
   }
+  
   @media (prefers-reduced-motion: no-preference) {
     .App-logo {
       animation: App-logo-spin infinite 20s linear;
     }
   }
   
-  .App-header {
+  .EmiCalculator-header {
     background-color: #282c34;
     min-height: 100vh;
     display: flex;
@@ -84,5 +88,19 @@
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .App {
+      padding: 10px;
+    }
+  
+    input, #submit {
+      width: 100%;
+    }
+  
+    #table {
+      font-size: 14px;
     }
   }
