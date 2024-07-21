@@ -41,7 +41,7 @@ const EmiCalculator = () => {
 
   return (
     <>
-    <h1>EMI CALC</h1>
+    <h1 className="emih1">EMI CALC</h1>
       <form onSubmit={handleSubmit}>
         <p>Principal Amount : </p>
         <input
